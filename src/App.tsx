@@ -3,19 +3,20 @@ import './App.css'
 import { IndexRoute } from './routes'
 import { CounterRoute } from './routes/counter'
 import { FormLoaderRoute, loader as  FormLoaderLoader } from './routes/formloader'
+import { PREFIX } from './settings'
 
 
 const router = createBrowserRouter(([
   {
-    path: "/",
+    path: `${PREFIX}/`,
     element: <IndexRoute />
   },
   {
-    path: "/counter",
+    path: `${PREFIX}/counter`,
     element: <CounterRoute /> 
   },
   {
-    path: "/formloader",
+    path: `${PREFIX}/formloader`,
     loader: FormLoaderLoader,
     element: <FormLoaderRoute />
   }
