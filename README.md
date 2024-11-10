@@ -1,2 +1,1 @@
-# test-github-pages
-try github pages
+# Test Github Pages
